@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+Instructions for the lab:
+_______________________________________________________________________________
+1. Add all of your code to this file, index.html. 
+2. There are a few css properties in this file. Leave them there. Use the css in 
+   Chapter 8, on page 289 to create a column layout with a header, main, aside 
+   and footer section.
+        3. In the header, display the image. Next to the image, add a span element with
+        class="title". Add content to display your name.
+        4. In the main section, add the following subtitles: Objectives, Courses 
+        Completed, Hobbies, and Favorite Books.
+        5. Under the Objectives subtitle, add an unordered list your academic and 
+        professional goals.
+        6. Under Courses Completed add an ordered list (with the default list type) 
+        with courses you've taken, are taking, or plan to take in the future.
+        7. Under Hobbies, add an ordered list with list style set to "a" with at 
+        least 3 hobbies.
+8. Under Favorite Books, add an ordered list with list style set to "i" 
+   with at least 3 books.  
+        9. In the aside, add a link to your github repository under the 
+        subtitle "Code Examples".
+        10. Add an unordered list of organizations that you belong to under the 
+        subtitle "Organizations".
+        11. In the footer, center align your email address.
+12. The background should be set to "teal" for the body. The background for 
+    any content sections: main, aside, header, footer should be set to "white".
+-->
+<html>
+  
+    <head>
+        <title>Michael Kasunick</title>
+        <style>
+        body { font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            max-width: 1500px;
+            margin: 0 auto;
+            border: 2px solid black; }
+            
+          
+        .title { color: teal; }
+        .subtitle { font-size: 1.4em; color: orange; font-weight: bold; }
+        .asidetitle { font-size: 1.4em; color: #999999; }
+        .footer { font-weight: bold;
+            clear: both;
+            width: 96.875%;
+            padding: 15px 1.5625%;}
+        
+        header { 
+            color: teal;
+            font-size: 26px;
+            font-weight:bold;
+            height: 77px;
+            background-color: white;
+            width: 96.875%;
+            padding: 15px 1.5625%;
+            border-bottom: 2px solid black; }
+
+        .main {
+            width: 40%;
+            padding: 15px 1.5625%;
+            border-right: 2px solid black;
+            float: none; }
+
+        aside {
+            width: 34.375%;
+            padding: 15px 1.5625%;
+            float: right; 
+            justify-content: space-between;
+        }
+            
+            
+        
+        footer {
+            clear: both;
+            width: 96.875%;            
+            padding: 15px 1.5625%;
+            border-top: 2px solid black; 
+            
+        }
+        </style>
+    </head>
+    <body style="background-color: teal;">
+        <header style="background-color: white;">
+            <img src="./images/triceratopslogo.jpeg">
+            <span class="title"> Michael Kasunick</span>
+        </header>
+        <main style="background-color: white;">
+                <p class="subtitle">Objectives
+                    <ul>
+                        <li>Get a degree</li>
+                        <li>Learn basics of coding in multiple languages</li>
+                        <li>Get a job in Networking</li>
+                    </ul>
+                </p>
+                <p class="subtitle">Course completed (or currently enrolled in):
+                    <ol>
+                        <li>IT1150</li>
+                        <li>ITNT2300</li>
+                        <li>HIST1020</li>
+                        <li>PSY1010</li>
+                    </ol>
+                </p>
+                <p class="subtitle">Hobbies:
+                    <ol type="A">
+                        <li>Try out stuff on my computer and server like running a website or email server</li>
+                        <li>Fix broken phones, laptops, and other electronics</li>
+                        <li>Hang out with friends</li>
+                    </ol>
+                </p>
+                <p class="subtitle">Favorite Books:
+                    <ol type="i">
+                        <li>test</li>
+                        <li>test2</li>
+                        <li>test3</li>
+                    </ol>
+                </p>
+        </main>
+        <aside style="background-color: white;">
+                <p class="asidetitle">Code Examples</p>
+                <a href="https://github.com/Mpk320" target="_blank">https://github.com/Mpk320</a>
+                <p class="asidetitle">Organizations
+                    <ul>
+                        <li>Tri-C</li>
+                        <li>Papa Johns</li>
+                    </ul>
+                </p>
+        </aside>
+        <footer style="background-color: white;">
+            <center>s01229511@acad.tri-c.edu</center>
+        </footer>
+    </body>
+</html>
